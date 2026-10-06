@@ -1,0 +1,4 @@
+com\example\primer\model\Product.class
+com\example\primer\controller\FileDownloadController.class
+com\example\primer\controller\FileUploadController.class
+com\example\primer\DemoApplication.class
