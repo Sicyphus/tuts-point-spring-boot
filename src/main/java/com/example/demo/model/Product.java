@@ -1,4 +1,4 @@
-package com.example.primer.model;
+package com.example.demo.model;
 
 public class Product {
     private String id; 
