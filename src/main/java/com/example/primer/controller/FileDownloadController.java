@@ -15,8 +15,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class FileDownloadController { 
  
  @RequestMapping(value="/download", method=RequestMethod.GET)  
- public ResponseEntity<Object> downloadFile() throws IOException  { 
-  String filename = "/var/tmp/mysql.png"; 
+ public ResponseEntity<Object> downloadFile() throws IOException  {
+  String currentDir = System.getProperty("user.dir"); 
+  String filename = currentDir + "/src/main/resources/mysql.png"; 
   File file = new File(filename); 
   InputStreamResource resource = new InputStreamResource(new 
 FileInputStream(file)); 
