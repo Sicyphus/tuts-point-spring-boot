@@ -76,6 +76,25 @@
 					<failOnError>false</failOnError>
 				</configuration>
 			</plugin>
+			<!--
+Source - https://stackoverflow.com/a/17921230
+Posted by user1907906, modified by community. See post 'Timeline' for change history
+Retrieved 2026-10-16, License - CC BY-SA 3.0
+-->
+			
+<plugin>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-compiler-plugin</artifactId>
+  <configuration>
+    <excludes>
+      <exclude>**\src\main\java\com\example\primer\entity\*.java</exclude>
+      <exclude>**\src\main\java\com\example\primer\model\Question.java</exclude>
+      <exclude>**\src\main\java\com\example\primer\repository\*.java</exclude>
+      <exclude>**\src\main\java\com\example\primer\service\*</exclude>
+    </excludes>
+  </configuration>
+</plugin>
+
 		</plugins>
 	</build>
 

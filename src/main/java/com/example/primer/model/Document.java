@@ -1,4 +1,4 @@
-package org.example;
+package com.example.primer.model;
 
 import jakarta.persistence.*;
 
@@ -31,7 +31,7 @@ public class Document {
         return id;
     }
 
-    public Long setId (Long id){
+    public void setId (Long id){
         this.id = id;
     }
 
@@ -39,7 +39,7 @@ public class Document {
         return fileName;
     }
 
-    public String setFileName (String fileName){
+    public void setFileName (String fileName){
         this.fileName = fileName;
     }
 
@@ -47,7 +47,7 @@ public class Document {
         return fileDate;
     }
 
-    public LocalDate setFileDate (LocalDate fileDate){
+    public void setFileDate (LocalDate fileDate){
         this.fileDate = fileDate;
     }
 
